@@ -14,4 +14,4 @@ CSS
 Javascript
 
 💻 Projeto
-visite o projeto acessando o site: 
+visite o projeto acessando o site: https://robotron-2000-alpha-roan.vercel.app/
