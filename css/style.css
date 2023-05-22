@@ -152,7 +152,7 @@ main {
 
 /****************************** Estatísticas *****/
 .estatisticas {
-    flex-basis: 23%;
+    flex-basis: 18%;
     padding: 2em 2em 0;
 }
 
@@ -205,9 +205,80 @@ main {
 
 .estatistica:nth-child(2n) .estatistica-valor {
     order: 1;
-    flex-basis: 35%;
+    flex-basis: 33%;
     margin: 10px 0 0;
 }
+  
+.container__cores-botoes {
+    display: flex;
+    z-index: 2;
+    justify-content:space-around;
+    align-items: center;
+    position: relative;
+    top:40%;
+    padding: 5px 10px;
+    border-radius: 100px;
+}  
+
+.cores__titulo {
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align:left;
+  }
+
+  .cores__botoes {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s;
+  }
+
+  .cores__botoes:hover{
+    transform: scale(150%);
+    transition: transform 0.2s;
+  }
+
+  .cores__botoes:active{
+    transform: scale(50%);
+  }
+
+.botao-ativo {
+    transform: scale(100%);
+    border-width: 2px;
+}
+
+[data-cor="azul"] {
+    background-color: rgb(54, 156, 215);
+    color: white;
+  }
+
+[data-cor="rosa"] {
+    background-color: rgb(215, 97, 170);
+    color: white;
+  }
+
+[data-cor="vermelho"] {
+    background-color: rgb(205, 51, 40);
+    color: white;
+  }
+
+[data-cor="preto"] {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+[data-cor="amarelo"] {
+    background-color: rgb(241, 224, 33);
+    color: white;
+}
+
+[data-cor="branco"] {
+    background-color: rgb(245, 245, 245);
+    color: rgb(4, 0, 0);
+}
+
 
 @media screen and (max-width: 1600px) {
     body { 
@@ -222,7 +293,7 @@ main {
 
 @media screen and (max-width: 1200px) {
     body { 
-        font-size: 13px;
+        font-size: 8.5px;
     }
 
     main {
